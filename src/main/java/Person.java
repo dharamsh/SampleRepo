@@ -1,5 +1,7 @@
 import java.io.Serializable;
 
+import com.emp.Employee;
+
 public class Person implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -7,8 +9,18 @@ public class Person implements Serializable {
 	private String id;
 
     private String name;
+    
+    private Employee emp;
 
-    public String getId() {
+    public Employee getEmp() {
+		return emp;
+	}
+
+	public void setEmp(Employee emp) {
+		this.emp = emp;
+	}
+
+	public String getId() {
         return id;
     }
 
